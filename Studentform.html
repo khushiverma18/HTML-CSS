@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form</title>
+    <style>h1{
+        color: brown;
+         text-align: center;
+        font: size 30px;
+    }
+    body{
+      background-color: lightblue;
+    }
+    div{
+      text-align: center;
+      color: red;
+      font-size:large;
+    }
+        
+        </style>
+</head>
+<body>
+    <h1>Student  form</h1>
+    <form>
+        <table>
+    <tr> 
+    <td><b>Enter the name:</b></td> 
+     <td><input type ="text" name="username" maxlength="30"/></td>
+       </tr>
+       <tr>
+      <td><b>Enter the mobile no:</b></td>
+      <td>  <input type="text"name="address" maxlength="40"/></td>
+     </tr>
+     <tr>
+        <td><b>Enter the email.id:</b></td>
+        <td><input type="text"name="email" maxlength="100"></td>
+     </tr>
+     <tr>
+        <td><b> Enter the date of birth:</b></td>
+        <td><input type="text"name="dateofbirth" maxlength="100" placeholder="dd/mm/yy"></td>
+     </tr>
+     <tr>
+        <td><b>Enter the Address:</b></td>
+        <td><textarea id="address"name="address" maxlength="100"></textarea></td>
+     </tr>
+     </table>
+     <br>
+    <p><b>Gender:</b><br> <label for="male">Male</label>
+     <input type="radio"id="male"name="Gender" value="MALE">
+     <label for="female">Female</label>
+       <input type="radio"id="female"name="fav_language" value="Female"></p>
+
+       <p> <b>your fav_language:</b><br>
+       <label for="css">CSS</label>
+       <input type="radio"id="css"name="fav_language" value="CSS">
+       <label for="html">HTML</label>
+       <input type="radio"id="html"name="fav_language" value="HTML">
+       <label for="java">JAVA</label>
+       <input type="radio"id="java"name="fav_language" value="JAVA">
+       <label for="c">C</label>
+       <input type="radio"id="c"name="fav_language" value="C"></p>
+       <p><b>Your hobbies:</b><br>
+       <label for="drowing">i am interstend in Drowing</label>
+       <input type ="checkbox" id="drowing"name="hobbies"value="Drowing">
+       <br>
+       <label for="dancing">i am interstend in Dancing</label>
+       <input type="checkbox" id="dancing"name="hobbies"value="Dancing">
+       <br>
+       <label for="singing">i am interstend in Singing</label>
+       <input type="checkbox" id="singing"name="hobbies"value="Singing"></p><br>
+       <b><label for="qualification">Qualification</label></b>
+       <table>
+        <tr>
+          <th></th>
+          <th>Board</th>
+          <th>percentage</th>
+          <th>year of passing</th>
+        </tr>
+        <tr>
+          <td>10th</td>
+          <td><input type="text" name="10-board" requires></td>
+          <td><input type="text" name="10-percentage" requires></td>
+          <td><input type="text" name="10-year of passing" requires></td>
+        </tr>
+        <tr>
+          <td>12th</td>
+          <td><input type="text" name="12-board" requires></td>
+          <td><input type="text" name="12-percentage" requires></td>
+          <td><input type="text" name="12-year of passing" requires></td>
+        </tr>
+        <tr>
+          <td>Graduation</td>
+          <td><input type="text" name="grd-board" requires></td>
+          <td><input type="text" name="grd-percentage" requires></td>
+          <td><input type="text" name="grd-year of passing" requires></td>
+        </tr>
+       </table>
+       <br>
+       <div class ="buttons">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+       </div>
+    </form>
+</body>
+</html>
