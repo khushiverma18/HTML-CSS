@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiplee Franchise Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <style>
+    /* Basic reset and styling */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; transition: background 0.3s, color 0.3s; }
+    .container { max-width: 1200px; margin: auto; padding: 20px; }
+
+    /* Hero section */
+    .hero { text-align: center; padding: 50px 0; color: blue;}
+    .hero p{
+        color: #17181a;
+    }
+    .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+    .hero button { padding: 10px 20px; font-size: 1em; cursor: pointer; border-radius: 20px; }
+    .hero button {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.hero button:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+    /* Dark mode toggle */
+    .dark-toggle { margin: 20px 0; cursor: pointer; }
+
+    /* Accordion */
+    .accordion { margin-top: 20px; }
+    .accordion-item { border-bottom: 1px solid #ccc; }
+    .accordion-header { cursor: pointer; padding: 15px; font-weight: bold; }
+    .accordion-content { display: none; padding: 15px; }
+
+    /* Franchise Benefits Table */
+    h2{color: blue;}
+    .benefits-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    .benefits-table th, .benefits-table td { padding: 15px; border: 1px solid #ccc; text-align: left; }
+    .benefits-table th { background-color: #f4f4f4; font-weight: bold; }
+
+    /* Partner Logos Grid */
+    .partner-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 30px 0 0;
+  list-style: none;
+}
+
+.partner-logo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 260px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 220px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #17181a;
+  background: rgb(210, 204, 204);
+  box-shadow: inset 0px 0px 0px 1px #edeef4;
+  transform: translate(0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.14s ease-in, text-shadow 0.1s ease-in;
+  will-change: transform;
+  cursor: pointer;
+}
+.partner-logo:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: none;
+  border-radius: 3px;
+  box-shadow: 0 10px 24px 0px rgba(0, 0, 0, 0.02), 0 8px 20px -2px rgba(0, 0, 0, 0.06), 0 6px 10px -6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.1s ease-in;
+  will-change: opacity;
+  opacity: 0;
+}
+.partner-logo:hover {
+  transform: translate(0, -20px);
+  transform: translate3d(0, -20px, 0);
+}
+.partner-logo:hover:before {
+  opacity: 1;
+}
+
+    /* Scroll-to-top button */
+    .scroll-to-top { 
+      position: fixed; 
+      bottom: 20px; 
+      right: 20px; 
+      padding: 10px 15px; 
+      font-size: 18px; 
+      display: none; 
+      cursor: pointer; 
+    }
+
+    /* Dark mode */
+    body.dark-mode { background: #333; color: #fff; }
+    .dark-toggle { margin: 20px 0; cursor: pointer; }
+
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2em; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Join the Shiplee Franchise</h1>
+    <button class="btn">Get Started</button>
+  </div>
+
+  <!-- Dark Mode Toggle -->
+  <div class="dark-toggle">
+    <label>
+      <input type="checkbox" id="darkModeToggle"> Dark Mode
+    </label>
+  </div>
+
+  <!-- "Why Choose Shiplee?" Accordion Section -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">Why Choose Shiplee?</div>
+      <div class="accordion-content">
+        <p>Shiplee offers extensive benefits for franchises including network reach, reliable support, and more.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Franchise Benefits Table -->
+  <h2>Franchise Benefits</h2>
+  <table class="benefits-table">
+    <tr>
+      <th>Benefit</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>Wide Reach <i class="fa fa-globe" aria-hidden="true"></i></td>
+      <td>Access to a large network of customers and couriers.</td>
+    </tr>
+    <tr>
+      <td>24/7 Support <i class="fa fa-phone-square" aria-hidden="true"></i></td>
+      <td>Reliable support to ensure smooth operations.</td>
+    </tr>
+    <tr>
+      <td>Flexible Options <i class="fa fa-flickr" aria-hidden="true"></i></td>
+      <td>Customize your franchise options to meet local needs.</td>
+    </tr>
+  </table>
+
+  <!-- "From Anywhere to Everywhere" Section -->
+  <div class="hero">
+    <h2>From Anywhere to Everywhere</h2>
+    <p>Shiplee reaches customers across various regions, ensuring timely delivery from anywhere to everywhere.</p>
+  </div>
+
+  <!-- Partner Logos Section -->
+  <h3>Our Partners</h3>
+  <div class="partner-logos">
+        <div class="partner-logo"><i class="fab fa-apple"></i></div>
+        <div class="partner-logo"><i class="fab fa-google"></i></div>
+        <div class="partner-logo"><i class="fab fa-amazon"></i></div>
+        <div class="partner-logo"><i class="fab fa-facebook"></i></div>
+        <div class="partner-logo"><i class="fab fa-microsoft"></i></div>
+      </div>
+</div>
+
+<!-- Scroll-to-top Button -->
+<button class="scroll-to-top" id="scrollToTopBtn">↑ Top</button>
+
+<script>
+  // Dark mode toggle
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  darkModeToggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+
+  // Accordion functionality
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const content = header.nextElementSibling;
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // Scroll-to-top button functionality
+  const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+  window.onscroll = () => {
+    if (window.scrollY > 200) {
+      scrollToTopBtn.style.display = 'block';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  };
+  scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
