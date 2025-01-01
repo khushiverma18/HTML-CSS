@@ -30,7 +30,7 @@ body{
 {
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1300px;
     min-height: 1000px;
     background: #fff;
     margin: 50px;
@@ -70,12 +70,12 @@ body{
     height: 100%;
     object-fit: cover;
 }
-.profileText h2
+h2
 {
-    color: #fff;
+    color: rgb(234, 228, 228);
     font-size: 1.5em;
     margin-top: 20px;
-    text-transform: uppercase;
+   text-transform: uppercase;
     text-align: center;
     font-weight:600;
     line-height: 1.4em;
@@ -88,6 +88,15 @@ body{
 .contactinfo
 {
     padding-top: 40px;
+}
+.photo{
+    border-radius: 50px;
+}
+.photo,img{
+    width: 200px;
+    height: 150px;
+    border-radius: 50px;
+    margin-left: 35px;
 }
 .title
 {
@@ -153,7 +162,7 @@ body{
 }
 .container .right_side
 {
-    position: relative;
+   
     background-color: #fff;
     padding: 40px;
 }
@@ -171,6 +180,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10 px;
+   
 }
 p
 {
@@ -245,6 +255,12 @@ p
 {
     margin: 20px;
 }
+.link{
+    color: #fff;
+}
+.git{
+    color:#fff;
+}
 </style>
 
 <body>
@@ -252,7 +268,8 @@ p
         <div class="left_side">
             <div class="tanya.jpg">
             </div>
-            <h2>KHUSHI VERMA<br><span>Web Developer</span></h2>
+            <span class="photo"><img src="https://i.imgur.com/VdgXIbS.jpeg" alt="mm" ></span>
+                <h2 class="title">KHUSHI VERMA<br></h2>
 
             <div class="contactinfo">
                 <h3 class="title">contact info</h3>
@@ -276,28 +293,30 @@ p
                 <h3 class="title">Education</h3>
                 <u1>
                     <li>
+                       <h5>2023-2025</h5>
+                       <h4>Masters in MCA</h4>
+                       <h4>SRM University</h4>
+                   </li>
+                    <li>
                         <h5>2020-2023</h5>
                         <h4>Graduation in BCA</h4>
                         <h4>CCSU University</h4>
                     </li>
-                     <li>
-                        <h5>2023-2025</h5>
-                        <h4>Masters in MCA</h4>
-                        <h4>SRM University</h4>
-                    </li>
                     <li>
-                        <h5>2018</h5>
+                        <h5>2020</h5>
                         <h4>intermediate</h4>
                         <h4>Up Board</h4>
                     </li>
                     <li>
-                        <h5>2016</h5>
+                        <h5>2018</h5>
                         <h4>High School</h4>
                         <h4>Up Board</h4>
                     
                     </li>
                 </u1>
-            </div>
+            </div><br>
+            <div class="link">LinkedIn:<a href="https://www.linkedin.com/in/khushi-verma-83a3a4250">LinkedIn</a></div>
+            <div class="git">Github: <a href="https://github.com/khushiverma18">Github</a></div>
             <div class="contactinfo languages">
                 <h3 class="title">Languages</h3>
                 <u1>
@@ -340,52 +359,74 @@ p
                         <span class="text">Smart Worker</span>
                     </li>
                     <li>
-                        <span class="text">Good communication skills</span>
+                        <span class="text">Interpersonal communication skills</span>
                     </li>
                 </u1>
             </div>
             <div class="about">
                 <h2 class="title2">Professional Skills</h2>
+                <ul>
                 <div class="box">
-                    <h4>Knowledge of HTML</h4>
+                <li><h4>Full Stack developer</h4></li>
+                    
+                </div>
+                <div class="box">
+                   <li> <h4>HTML & CSS</h4></li>
                     <div class="percent">
                         <div style="width: 80%;"></div>
                     </div>
                 </div>
                 <div class="box">
-                    <h4>Knowledge of CSS</h4>
-                    <div class="percent">
-                        <div style="width: 60%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>Knowledge of JavaScript</h4>
+                   <li><h4>JavaScript</h4></li>
                     <div class="percent">
                         <div style="width: 30%;"></div>
                     </div>
                 </div>
                 <div class="box">
-                    <h4>Basics of mongodb</h4>
+                    <li><h4>node.js & express</h4></li>
                     <div class="percent">
-                        <div style="width: 70%;"></div>
+                        <div style="width: 30%;"></div>
                     </div>
                 </div>
-                
                 <div class="box">
-                    <h4>Knowledge of java</h4>
+                    <li><h4>mongodb</h4></li>
                     <div class="percent">
                         <div style="width: 70%;"></div>
                     </div>
                 </div>
-                
+                <div class="box">
+                   <li><h4>React js</h4></li>
+                    <div class="percent">
+                        <div style="width: 30%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <li><h4>java</h4></li>
+                    <div class="percent">
+                        <div style="width: 70%;"></div>
+                    </div>
+                </div></ul>
+                <br>
+                <div class="about">
+                    <h2 class="title2">Project</h2>
+                    <ul><li><b>Wanderlust Project</b> -This project combines HTML, CSS, JavaScript, Node.js,
+                        Express, and MongoDB to create a robust platform for
+                        wanderlust enthusiasts. Utilizing RESTful APIs, the
+                        system integrates real-time travel data from multiple
+                        sources, offering users comprehensive insights into
+                        destinations, accommodations, and activities.This website is actually
+                         a smaller version of Airbnb website that connects people who want to rent
+                     out their property with people who are looking for accomodations,typically for short stays.  </li>
+                    <a href="https://wanderlust-pxdb.onrender.com/listing">--my project--</a></ul><br>
+                </div>
             <div class="About Interests">
                 <h2 class="title2">Interests</h2>
                 <u1>
-                    <li>Danceing <br> <i class="fa fa-music" aria-hidden="true"></i></li>
+                    <li>Dancing <i class="fa fa-child" aria-hidden="true"></i></li>
                     <li>Listening Music <i class="fa fa-headphones" aria-hidden="true"></i></li>
-                    <li>Watching cricket <i class="fas fa-cricket" ></i></li>
+                    <li>Watching cricket <i class="fa fa-circle" aria-hidden="true"></i></li>
                    
-
+                
                 </u1>
             </div>
             <div class="Professional Summary">
